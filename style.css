@@ -1,0 +1,43 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+
+
+
+.box1{
+    height:200px;
+    width: 200px;
+    background: gold;
+    border-radius: 5px;
+    margin-right: 3rem;
+}
+
+.box2{
+    height:200px;
+    width: 200px;
+    background: gold;
+    border-radius: 5px;
+
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    margin-top: 20rem;
+    align-self: center;
+    border-radius: 5px;
+    
+    
+    
+}
+
+input{
+height: 100px;
+width:100px;
+}
