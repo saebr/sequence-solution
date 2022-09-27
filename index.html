@@ -13,33 +13,39 @@
 <body>
     <div class="container">
         <div>
-            <label>Select</label>
+            <label>Select Child</label>
+            <div>
+            <select id="dropdown1">
+                <option value="FS">Front Subframe</option>
+                <option value="RS">Rear Subframe</option>
+                <option value="SP">Battery Pack</option>
+                <option value="CP">Chassis</option>
+            </select>
+            </div>
             <div class="box1">
                 <form>
-                    <select id="dropdown1">
-                        <option value="FS">Front Subframe</option>
-                        <option value="RS">Rear Subframe</option>
-                        <option value="SP">Battery Pack</option>
-                        <option value="CP">Chassis</option>
-                    </select>
-                    <input id="input1"></input>
+                    <input type='text' id="input1" onkeypress='return isNumber(event)'></input>
                 </form>
             </div>
         </div>
 
         <div>
-            <label>Select</label>
+            <label>Select Parent</label>
+            <div>
+                <select id="dropdown2">
+                    <option value="CP">Chassis</option>
+                    <option value="VIN">Body</option>
+                </select>
+            </div>
             <div class="box2">
                 <form>
-                    <select id="dropdown2">
-                        <option value="CP">Chassis</option>
-                        <option value="VIN">Body</option>
-                    </select>
-                    <input id="input2"></input>
+                    <input type='text' id="input2" onkeypress="return isNumber(event)"></input>
                 </form>
             </div>
         </div>
-        <div><h1 id="fixtext"></h1></div>
+        <div>
+            <h1 id="fixtext"></h1>
+        </div>
         <button onclick="run()">Submit</button>
     </div>
 </body>
